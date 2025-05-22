@@ -1,5 +1,7 @@
 package domain
 
+import "strings"
+
 type Role int
 
 const (
@@ -16,6 +18,15 @@ var RoleName = map[Role]string{
 
 func (r Role) String() string {
 	return RoleName[r]
+}
+
+func ParseRole(input string) Role {
+	for r, name := range RoleName {
+		if strings.EqualFold(name, input) {
+			return r
+		}
+	}
+	return -1
 }
 
 type User struct {
