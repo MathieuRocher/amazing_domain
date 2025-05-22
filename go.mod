@@ -1,4 +1,4 @@
-module github.com/MathieuRocher/amazing_domain/domains
+module github.com/MathieuRocher/amazing_domain
 
 go 1.24.3
 
