@@ -5,5 +5,6 @@ type Form struct {
 	MotherId           *uint
 	MotherForm         *Form
 	CourseAssignmentId *uint
+	CourseAssignment   *CourseAssignment
 	FormQuestions      []FormQuestion
 }
