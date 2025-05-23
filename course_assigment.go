@@ -9,4 +9,5 @@ type CourseAssignment struct {
 	Course     Course
 	ClassGroup ClassGroup
 	Trainer    User
+	Form       []Form
 }
